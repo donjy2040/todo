@@ -8,7 +8,7 @@
 깔끔한 UI와 반응형 디자인을 적용하여 모바일에서도 편리하게 사용할 수 있습니다.
 
 ### 🔗 바로가기
-* **실행 웹사이트:** [👉 여기를 클릭하여 접속](https://donjy2040.github.io/todo/임시todo.html)
+* **실행 웹사이트:** [👉 여기를 클릭하여 접속](https://donjy2040.github.io/todo/index.html)
 * **개발 기록 (기획서):** [상세 기획서 보기](./todo.md)
 
 ---
@@ -32,7 +32,7 @@
 ## 📂 폴더 구조
 ```text
 /todo
-├── 임시todo.html
+├── index.html
 ├── 임시todo.css
 ├── 임시todo.js
 ├── todo.md (기획서)
