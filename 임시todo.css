@@ -1,0 +1,146 @@
+/* 전체 배경 설정 */
+body {
+    background-color: #F2EDE4;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    color: #3C3836;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.todo-container {
+    width: 380px;
+}
+
+/* 제목 스타일: 얇은 두께와 투명도로 부드러운 강조 */
+h1.listPage {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* 입력창 그룹 */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    outline: none;
+}
+
+#todoInput::placeholder {
+    color: #A8A096;
+    font-size: 0.9em;
+}
+
+button#addBtn {
+    padding: 0 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #D4A373;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button#addBtn:hover {
+    background-color: #bc8e5f;
+}
+
+/* 카운트 표시 스타일 */
+#countContainer {
+    margin: 15px 0 20px 0;
+    font-size: 13px;
+    color: #8C857D;
+    text-align: right;
+}
+
+#todoCount {
+    font-weight: bold;
+    color: #D4A373;
+}
+
+/* 리스트 스타일 */
+#todoList {
+    padding: 0;
+    list-style: none;
+}
+
+/* 할 일 아이템: 터치 영역 확장 */
+li {
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 15px;
+}
+
+/* 완료 상태 스타일 */
+li.completed {
+    opacity: 0.6;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #A8A096;
+}
+
+/* 버튼 그룹 (수정/삭제) */
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    color: #A8A096;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.edit-btn:hover { color: #D4A373; text-decoration: underline; }
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #A8A096;
+    font-size: 24px;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.delete-btn:hover { color: #E57373; }
